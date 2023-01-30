@@ -11,7 +11,9 @@ module.exports = {
       },
       file: Sequelize.STRING,
       last_sync_product: Sequelize.INTEGER,
-      imported_t: Sequelize.DATE,
+      sequence_cron: Sequelize.INTEGER,
+      start_imported_t: Sequelize.DATE,
+      end_imported_t: Sequelize.DATE,
     })
   },
 
