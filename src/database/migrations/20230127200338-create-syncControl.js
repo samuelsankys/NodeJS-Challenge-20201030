@@ -10,7 +10,7 @@ module.exports = {
         autoIncrement: true,
       },
       file: Sequelize.STRING,
-      last_sync_product: Sequelize.STRING,
+      last_sync_product: Sequelize.INTEGER,
       imported_t: Sequelize.DATE,
     })
   },
