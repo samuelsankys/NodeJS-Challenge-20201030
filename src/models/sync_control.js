@@ -10,8 +10,10 @@ module.exports = (sequelize, DataTypes) => {
         autoIncrement: true,
       },
       file: DataTypes.STRING,
-      last_sync_product: DataTypes.STRING,
-      imported_t: DataTypes.DATE,
+      last_sync_product: DataTypes.INTEGER,
+      sequence_cron: DataTypes.INTEGER,
+      start_imported_t: DataTypes.DATE,
+      end_imported_t: DataTypes.DATE,
     },
     {
       timestamps: false,
