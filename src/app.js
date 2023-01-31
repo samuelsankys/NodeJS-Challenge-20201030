@@ -14,6 +14,6 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 require('./routes/index')(app)
 
-// jobsProducts()
+jobsProducts()
 
 module.exports = app
