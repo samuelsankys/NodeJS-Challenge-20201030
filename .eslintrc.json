@@ -1,0 +1,19 @@
+{
+  "env": {
+    "commonjs": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": ["prettier", "eslint:recommended"],
+  "plugins": ["prettier"],
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "max-len": ["error", { "limit": 130, "code": 130, "ignoreUrls": true }],
+    "quotes": ["error", "single"],
+    "semi": ["error", "never"]
+  }
+}
