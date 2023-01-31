@@ -57,6 +57,12 @@ em modo de desenvolvimento, e
 
 em modo de produção
 
+### Como acessar as Rotas
+
+O botão abaixoirá exportar a configuração do projeto para testar as rotas.
+
+[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=NodeJs-Challenge-20201030%20-%20Samuel%20Santana&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fsamuelsankys%2FNodeJS-Challenge-20201030%2Fmain%2FnodeChallenge.json)
+
 ### Observações
 
 - O servidor deve ser inicializado somente após a criação do banco de dados.
@@ -74,3 +80,5 @@ em modo de produção
 2. Inicialização da porta e criação das configurações do app
 
 3. Configuração do ESLint e prettier
+
+4. Foi utilizado Stream para manipulação dos dados, e carregado na memória, somente os que seriam necessários para carregar no banco de dados.
