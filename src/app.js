@@ -1,10 +1,19 @@
-const express = require("express");
-const app = express();
-const bodyParser = require("body-parser");
-const morgan = require("morgan");
+require('dotenv').config({
+  path: process.env.NODE_ENV === 'production' ? '.env' : '.env.development',
+})
 
-app.use(morgan("dev"));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+const express = require('express')
+const app = express()
+const bodyParser = require('body-parser')
+const morgan = require('morgan')
+const { jobsProducts } = require('./jobs/products')
 
-module.exports = app;
+app.use(morgan('dev'))
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: true }))
+
+require('./routes/index')(app)
+
+jobsProducts()
+
+module.exports = app
